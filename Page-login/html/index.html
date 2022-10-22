@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+</head>
+<body>
+     <div id="login-container">
+        <h1>Login</h1>
+        <form action="">
+            <!--formulario-->
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" aria-placeholder="Digite o seu E-mail" autocomplete="off">
+            <label for="password">Senha:</label>
+            <input type="password" name="password" id="password" aria-placeholder="Digite o sua senha">
+            <!--esqueceu a senha -->
+            <a href="#" id="forgot-pass">Esqueceu a senha</a>
+            <!-- buton login-->
+            <input type="submit" value="login"> 
+        </form>
+        <div id="social-container">
+            <p>Ou entre pelas suas redes socias</p>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAC+klEQVRoge2ZPWgUQRTHfxv1xJggfiBaqAE9LYIgio3oIQgSsTJRBC00jaWdiKYJWmiRxkYh2oiNChaC4mchMYLYGINWKopdwGguiReNmLWYXdgbdteZ3be7J9wfXrFv5t57v5vZuZk5aKqpTOQIxmoDKp51AmVgpecHmAbGgPfAO2AIeO75C5cD7ANuAz8B19JmgFtAF7JfqpUOAaMRBSaxEaA7T4Ay8FQQQLfHwIasIXqAiQwhfJsEjmQB4AD9OQDodhHBd8cBrhQA4dtlKZgLBUL4dj4txOEGgPDtaFKIMjAlVMQMcA21ZJeB5cASYCnQAWwGBv4RowqsTwIitcQ+AVYb5Os1iPXQFuKgEMR9YL5hThMQFzhgCuEg84v9FTWFTGUK8pqQVawlJGAXas6m1SAwLhBH1xZgr+4MG/ZeoYQ3Y9q2AceAVQFfh0Xs48CjuA7tJNvFhq0w82IgfqWMXwNag0H1qbULWBhHaqhPwJ+ItpNAKWX8RcDOoEMHqaRM4Ksa07ZHKMfu4IMO0imU5EeE30GdGiVUV6sOslEoiRvhX+CZhOpq1UFWCCXJQ3W16iBt/D9qDz6Ybh/i1A0803y/I/rOAssi2s4Apyzy1v266yA17JfGaeC7Rf+ovmst804FH/SpNWYZTFKbLPvX1aqDfExXS2K1YL9iftADBPUmVTnJtQZty2Gg0eCD/o68SFBEGfim+apo35gnB9ga4t+eIO9wXGMr6uWVOFCFqSQQ20XtHBYHA+tTqwY8iCNtEN1D2waFHayu5lNLKg2adHKAtzTu1BoJCxw2Ii7QZ0JckM7afiDNdVBWI2J9HQTqDD3ZQCATxGxjwqaWr8+oC4Kos0WecoETwJc0Qc5R/Ij0pwEI6lKBIANSEL5OA3M5gswhOBK6elDniaxBxrG4402qdagtQlYgd1G74dy0H3gVUUwSkJeo/+wLUwW4gdq624JMAtcRuBiUuHwY8qyEusbcQfTlgwvcQR3ghlHnn1mBGppqKiv9BbQaq8hoJU0EAAAAAElFTkSuQmCC">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAACz0lEQVRoge2aXUtUQRjHf2Z0lEiS0gKVhLqpr1DpjRiWH6DNb7AQhR8juigKotvoG7QaRjeSgVnXuq5LF21dlF1IL5C1uF08Z+A0zDk7c94N//Cgzpzz8P85c2bnPLNwoHKpJ8Vcg8AkcBG4AJwFhoGjfv9P4DPwHlgHVoBlYCdFD7HlAXPAEtAGOo7RBp4DN/xcuasfmAc+WZi1jY/AbaAvL4gZoJkigB5bwJUsATzgfoYAejxBRj5VnQLe5QihYg1ZMFLRODLceUOoaPgeEmkIqBcIoaIJnI4L0Ucx0ylqmsVaoh+VwLweD1whZkpgOiymbSH6sfucqAEjwCiwmCNIA8spNm+ZcDRwz1iOIB3gVjcID/ttR5EgLbqMypxDskUfZgzZ+OUJ0gEqUSBLBRiKGwtB48H3kUFgG+iNIi2R2sAJ4BvAoUDHJPsHAuAwMKH+CIJcckzUo4VN/wpwHVm2PeQZq/jtcTRhaqzhNkd1deuvdjFVBf44enhmStTIGMRGVUcPdVOSryUAAZlmth62TQl2cwCZRXaxP/yf1wzXVBw8/CoCZDYkz1XtupGkIFlPrbched5o1/U6eDBOrc2MQcJG3PRftfWwoW4Ifo40TXQp6khIe5LC3Jb6JQiyniBhUTKOyOsCjCTVK1Pjcdzqt7pc++Neq+I3MKBuCI7IDvDSRFhSvcDf+cK/ICBlyv2ip1GdHlIVL/vUaqGtgvqI7AJ3I0CTGE+SS9cd5BmJlEc5yqRhYV0OAjmfKNqwKfaAKVsIpYclMK7HPVcIkOFbK4F5FauEb3O66iTleF6ayGFTIo3j/hqcZmwCZ5JCKA1TzDRbRQ6bUpU6DN3LCeIxGZ+9T5PtVKsTY4mNKw8p7bdSBPgA3KSgb0B4SNVjAffiWse/p4ZUH2MvrZDul2oGkPrxZeA8cA55UI/5/d+BL8hSuoG8FC377Qf67/QXu4F46BKPyR0AAAAASUVORK5CYII=">
+        </div>
+     </div>
+</body>
+</html>
+
+

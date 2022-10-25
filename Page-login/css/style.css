@@ -1,0 +1,31 @@
+/* gerais */ 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+    color: #323232;
+    border: none;
+}
+
+body {
+    background-image: url('../img/HD-wallpaper-blue-plain-thumbnail.jpg');
+    background-size: cover;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+a {
+    font-size: .8rem;  /* 16 * .8 = x*/ 
+}
+
+a:hover {
+    color: #08558B;
+}
+
+#login-container {
+    background-color: aliceblue;
+}

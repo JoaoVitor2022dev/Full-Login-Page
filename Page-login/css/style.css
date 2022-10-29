@@ -12,6 +12,7 @@
 body {
     background-image: url('../img/HD-wallpaper-blue-plain-thumbnail.jpg');
     background-size: cover;
+    padding-bottom: 30px;
 }
 
 textarea:focus, input:focus {
@@ -34,7 +35,7 @@ a:hover {
     margin-left: auto;
     margin-right:auto; 
     padding: 20px 30px;
-    margin-top: 10vh;
+    margin-top: 8vh;
     border-radius: 10px;
     text-align: center;
 }
@@ -92,4 +93,17 @@ input[type="submit"]:hover {
     background-color: #FFD700;   
     color: black;
     transition: .5s;
+}
+
+
+/* redes socias  */ 
+
+#social-container, #social-container p {
+    margin-bottom: 20px;
+}
+
+/* container registrar */ 
+
+#register-container p {
+    margin-bottom: 10px;
 }
